@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Tours Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(1, 1, 61);
+        }
+
+        h1 {
+            font-size: 50px;
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+        label{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .div1 {
+            padding-bottom: 10px;
+            text-align: center;
+            border: 2px solid rgb(1, 1, 61);
+            background-color: rgb(224, 172, 0);
+            color: rgb(1, 1, 61);
+            border-radius: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+            height: fit-content;
+            width: 75%;
+        }
+
+        input {
+            font-weight: bolder;
+            height: 30px;
+            width: 70%;
+            border-radius: 20px;
+            border: 1px solid rgb(224, 172, 0);
+            padding: 7px;
+        }
+
+        .div2 {
+            padding-right: -200px;
+        }
+
+        select {
+            font-weight: bold;
+            padding: 5px;
+            height: 40px;
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        select option{
+           color: rgb(224, 172, 0);
+           background-color:  rgb(1, 1, 61);
+
+        }
+
+        textarea {
+            padding: 10px;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 20px; */
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 60px;
+            width: 150px;
+            background-color: rgb(224, 172, 0);
+            color: rgb(1, 1, 61);
+            border: 0.5px solid rgb(1, 1, 61);
+            border-radius: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+        .div2 {
+            display: flex;
+            align-items: center;
+            margin-left: 40%;
+
+
+        }
+
+        #inp3 {
+            margin-top: 80px;
+            display: none;
+            margin-right: 100px;
+            width: 30%;
+        }
+           /* width */
+::-webkit-scrollbar {
+ 
+ width: 13px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: rgb(1, 1, 61); 
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(224, 172, 0); 
+ border: 0.5px solid rgb(224, 172, 0);
+ border-radius: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <form onsubmit="myFunction3()">
+        <div class="div1">
+            <h1>PACKAGES BOOKING</h1>
+            <label>Tour Categories</label> <br>
+            <select>
+                <option>Pakistan Tour packages</option>
+                <option>International Tour packages</option>
+                <option>Umrah packages</option>
+            </select> <br> <br>
+            <label>Tour code:</label> <br>
+            <input type="text" placeholder="Enter Tour Code"> <br> <br>
+
+            <label>Enter First Name:</label> <br>
+            <input type="text" placeholder="First Name" id="f_name" required> <br> <br>
+            <label>Enter Last Name:</label> <br>
+            <input type="text" placeholder="Last Name" required> <br> <br>
+            <label>Email:</label> <br>
+            <input type="email" placeholder="helloworld@gmail.com" required> <br> <br>
+            <label>Phone Number:</label> <br>
+            <input type="tel" required> <br> <br>
+
+
+            <div class="div2">
+                <div>
+                    <input type="radio" name="radio1" id="inp1" onclick="myFunction()" /> Persons
+                </div>
+                <div>
+                    <input type="radio" id="inp2" name="radio1" onclick="myFunction2()"> Couple
+                </div>
+                <br>
+                <input type="number" id="inp3" placeholder="Number of Persons:">
+            </div>
+            <br> <br>
+            <label>Departure Place:</label> <br>
+            <input type="text" placeholder="e.g: karachi Pakistan" required> <br> <br>
+            <label>Departure Date:</label> <br>
+            <input type="date" required> <br> <br>
+            <h1>Or</h1>
+            <h1>Customize Your own Tour:</h1>
+            <textarea name="" id="" cols="40" rows="7" placeholder="Customize Your Own"></textarea>
+        </div>
+       <button>Submit</button>
+    </form>
+   
+    <script>
+        function myFunction() {
+            document.getElementById("inp3").style.display = "block"
+        }
+        function myFunction2() {
+            document.getElementById("inp3").style.display = "none"
+        }
+        function myFunction3() {
+            confirm("Your Booking has been Submitted. Shortly you will recieve  confirmation Email!");
+        }
+    </script>
+
+</body>
+
+</html>

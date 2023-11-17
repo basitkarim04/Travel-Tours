@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Rentcar.css">
+    <style>
+        /* scrollbar */
+            /* width */
+::-webkit-scrollbar {
+ 
+ width: 13px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: rgb(1, 1, 61); 
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(224, 172, 0); 
+ border: 0.5px solid rgb(224, 172, 0);
+ border-radius: 20px;
+}
+.btn{
+  height: 99px;
+  display: block;
+  width: 10vw;
+  color: rgb(224, 172, 0);
+  background-color: rgb(1, 1, 61);
+  border: 1px rgb(1, 1, 61) solid;
+  margin-left: 100px;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="image/logo.jpg" alt="logo">
+        <div class="nav">
+           <a href="home.html"><li id="home">Home</li></a> 
+          <a href="packages.html"> <li id="pack">Packages</li></a> 
+           <a href="RentACar.html"><li id="car">Rent A Car</li> </a> 
+           <a href="hotel.html"><li id="hotel">Hotels</li> </a> 
+           <a href="flight.html"><li  id="flight">Flights</li> </a> 
+           <a href="booking.html"> <li  id="booking">Bookings</li></a>
+        </div>
+        </div>
+        <a style="text-decoration: none; list-style-type: none; color: rgb(224, 172, 0);
+        background-color: rgb(1, 1, 61);" href="login.html"><button class="btn">LOGIN</button></a>
+    </header>
+    <header>
+        <div class="headr">
+            <h1>Rent A Car</h1><br>
+
+        </div>
+    </header>
+    <table class="t1">
+        <tbody>
+            <tr class="theading">
+                <th colspan="5">
+                    <h2>Car Rental Rates</h2>
+                </th>
+            </tr>
+            <tr>
+                <th>Cars</th>
+                <th>Rates per day</th>
+                <th>Rates per week</th>
+                <th>Rates per month</th>
+            </tr>
+            <tr>
+                <td>Suzuki WagonR</td>
+                <td>2,499</td>
+                <td>15,399</td>
+                <td>59,999</td>
+            </tr>
+            <tr class="d1">
+                <td>Suzuki Alto</td>
+                <td>3,399</td>
+                <td>21,999</td>
+                <td>74,999</td>
+            </tr>
+            <tr>
+                <td>Toyota Corolla</td>
+                <td>4,499 </td>
+                <td>29,999</td>
+                <td>87,999</td>
+            </tr>
+            <tr class="d1">
+                <td>Toyota Hilux - Revo</td>
+                <td>8,999 </td>
+                <td>59,999 </td>
+                <td>239,999</td>
+            </tr>
+            <tr>
+                <td>Honda Civic</td>
+                <td>5,999 </td>
+                <td>39,999 </td>
+                <td>164,999</td>
+            </tr>
+            <tr class="d1">
+                <td>Toyota Prado</td>
+                <td>12,000</td>
+                <td>80,000</td>
+                <td>270,000</td>
+            </tr>
+            <tr>
+                <td>Mercedes CLA200</td>
+                <td>21,999</td>
+                <td>125,999</td>
+                <td>509,999</td>
+            </tr>
+            <tr class="d1">
+                <td>Hiace Grand Cabin</td>
+                <td>8,499 </td>
+                <td>51,799 </td>
+                <td>209,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 class="select">Select Your Car</h1><br>
+    <div class="allone">
+    <div class="response">
+        <div class="images">
+            <img src="image/alto.jpg" alt="" width="400" height="300">
+
+            <div class="descrip">
+                <p>
+                <h2>Suzuki Alto</h2>A five-seater comfortable and luxurous car for your trip.<span
+                    id="d1">...</span><span id="m1"> <br> This car will be the reason of your comfortablity along <br>
+                    your trip. This car will not disappoint you at any way possible. <br> Be ready to feel your most
+                    memorable moment of life with us. <br><br>Fare/day :3,399 PKR <br>Fare/week :21,999 PKR
+                    <br>Fare/month :74,999 PKR</span></p>
+                <button onclick="myFunction1()" id="myBtn1">Read more</button>
+                <script>
+                    function myFunction1() {
+                        var d1 = document.getElementById("d1");
+                        var moreText = document.getElementById("m1");
+                        var btnText = document.getElementById("myBtn1");
+
+                        if (d1.style.display === "none") {
+                            d1.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            d1.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <div class="response">
+        <div class="images">
+            <img src="image/wagonr2.jpg" alt="" width="400" height="300">
+
+            <div class="descrip">
+                <p>
+                <h2>Suzuki WagonR</h2>A six-seater comfortable and luxurous car for your trip.<span
+                    id="d2">...</span><span id="m2"> <br> This car will be the reason of your comfortablity along <br>
+                    your trip. This car will not disappoint you at any way possible. <br> Be ready to feel your most
+                    memorable moment of life with us. <br><br>Fare/day :3,399 PKR <br>Fare/week :15,399 PKR
+                    <br>Fare/month :59,999 PKR</span></p>
+                <button onclick="myFunction2()" id="myBtn2">Read more</button>
+                <script>
+                    function myFunction2() {
+                        var d2 = document.getElementById("d2");
+                        var moreText = document.getElementById("m2");
+                        var btnText = document.getElementById("myBtn2");
+
+                        if (d2.style.display === "none") {
+                            d2.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            d2.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div> 
+
+    <div class="response">
+        <div class="images">
+            <img src="image/corola2.jpg" alt="" width="400" height="300">
+
+            <div class="descrip">
+                <p>
+                <h2>Toyota Corolla</h2>A five-seater comfortable and luxurous car for your trip.<span
+                    id="d3">...</span><span id="m3"> <br> This car will be the reason of your comfortablity along <br>
+                    your trip. This car will not disappoint you at any way possible. <br> Be ready to feel your most
+                    memorable moment of life with us. <br><br>Fare/day :4,499 PKR <br>Fare/week :29,999 PKR
+                    <br>Fare/month :87,999 PKR</span></p>
+                <button onclick="myFunction3()" id="myBtn3">Read more</button>
+                <script>
+                    function myFunction3() {
+                        var d3 = document.getElementById("d3");
+                        var moreText = document.getElementById("m3");
+                        var btnText = document.getElementById("myBtn3");
+
+                        if (d3.style.display === "none") {
+                            d3.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            d3.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="response">
+        <div class="images">
+            <img src="image/civic2.jpg" alt="" width="400" height="300">
+
+            <div class="descrip">
+                <p>
+                <h2>Honda Civic</h2>A five-seater comfortable and luxurous car for your trip.<span
+                    id="d4">...</span><span id="m4"> <br> This car will be the reason of your comfortablity along <br>
+                    your trip. This car will not disappoint you at any way possible. <br> Be ready to feel your most
+                    memorable moment of life with us. <br><br>Fare/day :8,899 PKR <br>Fare/week :59,999 PKR
+                    <br>Fare/month :239,999 PKR</span></p>
+                <button onclick="myFunction4()" id="myBtn4">Read more</button>
+                <script>
+                    function myFunction4() {
+                        var d4 = document.getElementById("d4");
+                        var moreText = document.getElementById("m4");
+                        var btnText = document.getElementById("myBtn4");
+
+                        if (d4.style.display === "none") {
+                            d4.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            d4.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="response">
+        <div class="images">
+            <img src="image/himux2.jpg" alt="" width="400" height="300">
+
+            <div class="descrip">
+                <p>
+                <h2>Toyota Hilux</h2>A eight-seater comfortable and luxurous car for your trip.<span
+                    id="d5">...</span><span id="m5"> <br> This car will be the reason of your comfortablity along <br>
+                    your trip. This car will not disappoint you at any way possible. <br> Be ready to feel your most
+                    memorable moment of life with us. <br><br>Fare/day :11,999 PKR <br>Fare/week :79,999 PKR
+                    <br>Fare/month :269,999 PKR</span></p>
+                <button onclick="myFunction5()" id="myBtn5">Read more</button>
+                <script>
+                    function myFunction5() {
+                        var d5 = document.getElementById("d5");
+                        var moreText = document.getElementById("m5");
+                        var btnText = document.getElementById("myBtn5");
+
+                        if (d5.style.display === "none") {
+                            d5.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            d5.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="response">
+        <div class="images">
+            <img src="image/hiace2.jpg" alt="" width="400" height="300">
+
+            <div class="descrip">
+                <p>
+                <h2>Toyota Hiace</h2>A 18-seater comfortable and luxurous car for your trip.<span
+                    id="d6">...</span><span id="m6"> <br> This car will be the reason of your comfortablity along <br>
+                    your trip. This car will not disappoint you at any way possible. <br> Be ready to feel your most
+                    memorable moment of life with us. <br><br>Fare/day :8,499 PKR <br>Fare/week :51,799 PKR
+                    <br>Fare/month :208,999 PKR</span></p>
+                <button onclick="myFunction6()" id="myBtn6">Read more</button>
+                <script>
+                    function myFunction6() {
+                        var d6 = document.getElementById("d6");
+                        var moreText = document.getElementById("m6");
+                        var btnText = document.getElementById("myBtn6");
+
+                        if (d6.style.display === "none") {
+                            d6.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            d6.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</div> 
+
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="image/logo.jpg" alt="">
+        </div>
+
+        <div class="list">
+            <a href="about.html" style="color: rgb(224, 172, 0);">
+                <li>About Us</li>
+            </a>
+            <a href="contact.html" style="color: rgb(224, 172, 0);">
+                <li>Contact Us</li>
+            </a>
+        </div>
+        <div class="p">
+            <p> Copyright &copy 2023 Wanderlusters.pk. All rights reserved</p>
+        </div>
+        <div class="disclaimer">
+
+            <p> <b style="font-size: 30px;">Disclaimer:</b> Wanderlusters is Pakistani based website. It is largest
+                travel platform for people who want to travel around the world. Intresting thing about this agency is
+                you can travel anywhere you want in low cost. We offers you good,interesting and wonderful packages and
+                services. So what are you waiting for "BOOK AND TRAVEL". </p>
+        </div>
+    </footer>
+</body>
+
+</html>

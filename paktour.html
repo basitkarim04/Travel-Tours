@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Tour</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 15vh;
+            width: 100%;
+            color: rgb(224, 172, 0);
+            background-color: rgb(1, 1, 61);
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .nav {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            color: rgb(224, 172, 0);
+            font-weight: bolder;
+            text-align: center;
+            padding-top: 0px;
+            font-size: bolder;
+        }
+
+        .nav li a {
+            display: block;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        .nav li:hover {
+            background-color: rgb(224, 172, 0);
+            color: rgb(1, 1, 61);
+            display: block;
+        }
+
+        a {
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        li {
+            margin-left: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 40px;
+            height: 8.5vh;
+            text-decoration: none;
+            color: rgb(224, 172, 0);
+            font-weight: bold;
+            font-size: large;
+        }
+
+        header button {
+            width: 10vw;
+            color: rgb(224, 172, 0);
+            background-color: rgb(1, 1, 61);
+            border: 1px rgb(1, 1, 61) solid;
+            margin-left: 100px;
+            font-weight: bolder;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        header button:hover {
+            background-color: rgb(224, 172, 0);
+            color: rgb(1, 1, 61);
+        }
+
+        body {
+            background-color: rgb(1, 1, 61);
+        }
+
+        a {
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: rgb(224, 172, 0);
+        }
+
+        .main {
+            position: absolute;
+            height: auto;
+            width: 80%;
+            background-color: rgb(224, 172, 0);
+            margin-bottom: 30px;
+            padding-top: 20px;
+            margin-left: 140px;
+            border-radius: 100px;
+            padding-bottom: 30px;
+        }
+
+        .place1{
+            background-image: url(image/pack_naran1.jpg);
+            filter: blur(2.5px);
+            height: 40vh;
+            width: 50vw;
+            margin: 20px 0 0 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border-radius: 20px;
+            font-weight: bolder;
+            animation: MoveUpDown 1s linear;
+        }
+
+        .div1 {
+            height: 40vh;
+            width: 50vw;
+            box-sizing: border-box;
+            margin-top: -263px;
+            margin-left: 216px;
+            padding-top: 20px;
+            position: relative;
+            font-size: 50px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div1:hover {
+            background: rgb(238, 218, 218, 0.534);
+            height: 40vh;
+            width: 50vw;
+            border-radius: 20px;
+
+        }
+
+        .place2 {
+            background-image: url(image/pack_skardu1.jpg);
+            filter: blur(2.5px);
+            height: 40vh;
+            width: 50vw;
+            margin: 20px 0 0 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border-radius: 20px;
+            font-weight: bolder;
+        }
+
+        .div2 {
+            height: 40vh;
+            width: 50vw;
+            box-sizing: border-box;
+            margin-top: -263px;
+            margin-left: 216px;
+            padding-top: 20px;
+            position: relative;
+            font-size: 50px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .div2:hover {
+            background-color: rgb(238, 218, 218, 0.534);
+            height: 40vh;
+            width: 50vw;
+            border-radius: 20px;
+        }
+
+        .place3 {
+            background-image: url(image/pack_swat2.jpg);
+            filter: blur(2.5px);
+            height: 40vh;
+            width: 50vw;
+            margin: 20px 0 0 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border-radius: 20px;
+            font-weight: bolder;
+        }
+
+        .div3 {
+            height: 40vh;
+            width: 50vw;
+            box-sizing: border-box;
+            margin-top: -263px;
+            margin-left: 216px;
+            padding-top: 20px;
+            position: relative;
+            font-size: 50px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div3:hover {
+            background-color: rgb(238, 218, 218, 0.534);
+            height: 40vh;
+            width: 50vw;
+            border-radius: 20px;
+        }
+
+        .place4 {
+            background-image: url(image/pack_neelum4.jpg);
+            filter: blur(2.5px);
+            height: 40vh;
+            width: 50vw;
+            margin: 20px 0 0 20%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border-radius: 20px;
+            font-weight: bolder;
+        }
+
+        .div4 {
+            height: 40vh;
+            width: 50vw;
+            box-sizing: border-box;
+            margin-top: -263px;
+            margin-left: 216px;
+            padding-top: 20px;
+            position: relative;
+            font-size: 50px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div4:hover {
+            background-color: rgb(238, 218, 218, 0.534);
+            height: 40vh;
+            width: 50vw;
+            border-radius: 20px;
+        }
+
+        .place5 {
+            background-image: url(image/pack_kumrat1.jpg);
+            filter: blur(2.5px);
+            overflow: hidden;
+            height: 40vh;
+            width: 50vw;
+            margin: 20px 0 0 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border-radius: 20px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+
+        .div5 {
+            height: 40vh;
+            width: 50vw;
+            box-sizing: border-box;
+            margin-top: -283px;
+            margin-left: 216px;
+            padding-top: 20px;
+            position: relative;
+            font-size: 50px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div5:hover {
+            background-color: rgb(238, 218, 218, 0.534);
+            height: 40vh;
+            width: 50vw;
+            border-radius: 20px;
+
+
+        }
+        .line {
+      height: 3px;
+      width: 100%;
+      background-color: rgb(224, 172, 0);
+    }
+
+    footer{ margin-top: 110%;
+    color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+text-align: center;}
+    .logo img{
+        width: 10%;
+        height: fit-content;
+    }
+    .list li{
+        padding-right: 10px;
+        margin-left: -20px;
+        display: inline-block;
+        justify-content: center;
+        font-size:30px;
+    }
+    footer b{
+        font-size:25px;
+        font-weight: bolder;
+
+    }
+    p a{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(224, 172, 0);
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .list li:hover{
+       color: white;
+       text-decoration: underline;
+    }
+
+        .list li:hover {
+            color: white;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+
+            width: 15px;
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgb(1, 1, 61);
+            border-radius: 20px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(224, 172, 0);
+            border: 0.5px solid rgb(224, 172, 0);
+            border-radius: 20px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(224, 160, 0);
+        }
+        .btn{
+  height: 99px;
+  display: block;
+  width: 10vw;
+  color: rgb(224, 172, 0);
+  background-color: rgb(1, 1, 61);
+  border: 1px rgb(1, 1, 61) solid;
+  margin-left: 100px;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="image/logo.jpg" alt="logo">
+        <div class="nav" id="nav">
+            <a href="home.html">
+                <li id="home">Home</li>
+            </a>
+            <a href="packages.html">
+                <li id="pack">Packages</li>
+            </a>
+            <a href="RentACar.html">
+                <li id="car">Rent A Car</li>
+            </a>
+            <a href="hotel.html">
+                <li id="hotel">Hotels</li>
+            </a>
+            <a href="flight.html">
+                <li id="flight">Flights</li>
+            </a>
+            <a href="booking.html">
+                <li id="booking">Bookings</li>
+            </a>
+        </div>
+        <a style="text-decoration: none; list-style-type: none; color: rgb(224, 172, 0);
+        background-color: rgb(1, 1, 61);" href="login.html"><button class="btn">LOGIN</button></a>
+    </header>
+    <div class="line"></div>
+    <h1>Pakistan Packages</h1>
+    <div class="main">
+        <div class="place1"></div>
+        <a href="pack_naran.html">
+            <div class="div1"> Naran</div>
+        </a>
+
+
+        <div class="place2"></div>
+        <a href="pack_skardu.html">
+            <div class="div2"> Skardu</div>
+        </a>
+
+
+        <div class="place3"></div>
+        <a href="pack_swat.html">
+            <div class="div3"> Swat</div>
+        </a>
+
+
+        <div class="place4"></div>
+        <a href="pack_neelum.html">
+            <div class="div4">Neelum Valley <br> Azad Kashmir</div>
+        </a>
+
+
+        <div class="place5"></div>
+        <a href="pack_kumrat.html">
+            <div class="div5"> Kumrat Valley</div>
+        </a>
+    </div> <br>
+    <footer>
+        <div class="logo">
+            <img src="image/logo.jpg" alt="">
+        </div>
+        <div class="list">
+            <a href="about.html" style="color: rgb(224, 172, 0);">
+                <li>About Us</li>
+            </a>
+            <a href="contact.html" style="color: rgb(224, 172, 0);">
+                <li>Contact Us</li>
+            </a>
+        </div> <br>
+        <div class="p">
+            <p> Copyright &copy 2023 <a href="home.html">Wanderlusters.pk.</a>  All rights reserved</p>
+        </div> <br>
+        <div class="disclaimer">
+
+            <p> <b style="font-size: 30px;">Disclaimer:</b> Wanderlusters is Pakistani based website. It is largest
+                travel platform for people who want to travel around the world. Intresting thing about this agency is
+                you can travel anywhere you want in low cost. We offers you good,interesting and wonderful packages and
+                services. So what are you waiting for "BOOK AND TRAVEL". </p>
+        </div> <br>
+    </footer>
+</body>
+
+</html>

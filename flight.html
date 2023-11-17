@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FLIGHTS</title>
+   <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        header{
+    height: 15vh;
+    width: 100%;
+    color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+    display: flex;
+    flex-direction: row;
+
+}
+body{
+  background-image: url(image/bggg.png);
+}
+   .nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color:rgb(224, 172, 0);
+    font-weight: bolder;
+    text-align: center;
+   padding-top: 0px;
+   font-size: bolder;
+}
+.nav li a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.nav li:hover{
+    background-color:rgb(224, 172, 0);
+    color:  rgb(1, 1, 61);
+     display: block;
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+   li{ margin-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    height: 8.5vh;
+    text-decoration: none;
+    color:rgb(224, 172, 0);
+    font-weight: bold;
+    font-size: large;
+    
+
+   }
+header button{
+    width: 10vw;
+    color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+    border: 1px rgb(1, 1, 61) solid;
+    margin-left: 100px;
+    font-weight: bolder;
+    font-size: larger;
+}
+header button:hover{
+    background-color:rgb(224, 172, 0) ;
+    color: rgb(1, 1, 61);
+}
+footer {
+  padding-left: 20px;
+  color: rgb(224, 172, 0);
+  background-color: rgb(1, 1, 61);
+  text-align: center;
+}
+
+.logo img {
+  width: 10%;
+}
+
+.list li {
+  display: inline-block;
+  padding: 20px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.list li a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer b {
+  font-size: 25px;
+  font-weight: bolder;
+
+}
+
+footer p {
+  font-size: 20px;
+}
+
+.list li:hover {
+  color: white;
+  text-decoration: underline;
+}
+        p a{
+       text-decoration: none;
+       list-style-type: none;
+       color: rgb(224, 172, 0);
+   }
+    ::-webkit-scrollbar {
+ 
+ width: 13px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: rgb(1, 1, 61); 
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(224, 172, 0); 
+ border: 0.5px solid rgb(224, 172, 0);
+ border-radius: 20px;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.btn{
+  height: 99px;
+  display: block;
+  width: 10vw;
+  color: rgb(224, 172, 0);
+  background-color: rgb(1, 1, 61);
+  border: 1px rgb(1, 1, 61) solid;
+  margin-left: 100px;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.heading{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(1, 1, 61) ;
+}
+    
+   </style>
+</head>
+<body >
+  <header>
+    <img src="image/logo.jpg" alt="logo">
+    <div class="nav">
+       <a href="home.html"><li id="home">Home</li></a> 
+      <a href="packages.html"> <li id="pack">Packages</li></a> 
+       <a href="RentACar.html"><li id="car">Rent A Car</li> </a> 
+       <a href="hotel.html"><li id="hotel">Hotels</li> </a> 
+       <a href="flight.html"><li  id="flight">Flights</li> </a> 
+       <a href="booking.html"> <li  id="booking">Bookings</li></a>
+    </div>
+    </div>
+    <a style="text-decoration: none; list-style-type: none; color: rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);" href="login.html"><button class="btn">LOGIN</button></a>
+</header>
+
+
+    <h1 class="heading">Search And Book Flights</h1>
+  <form>
+
+    <div class="row" style="text-align: center; margin-left: 10%; margin-bottom: 10px;">
+      <div class="column" style=" background-color: rgb(224,172,0); border: 1px solid rgb(1, 1, 61);">
+          <label>Full Name:
+            <input type="text"  id="from" placeholder="Enter Your Full Name">
+          </label><br>
+          </div>
+          
+          <div class="column" style=" background-color: rgb(224,172,0); border: 1px solid rgb(1, 1, 61);">
+          <label  style="padding: 20px;">Email:
+            <input type="text"  id="to" placeholder="Enter Your Email">
+          </label>          
+        </div>
+  
+
+          <div class="column" style="background-color: rgb(224,172,0); border: 1px solid rgb(1, 1, 61);">
+          <label  style="padding: 10px;">Phone NO:
+
+          <input type="number" placeholder="Enter Phone Number">
+          </label>
+          </div>
+  
+  
+          <div class="column" style="background-color:  rgb(224,172,0); border: 1px solid rgb(1, 1, 61);">
+          <label  style="padding: 10px;">CNIC- NO:
+            <input type="number" placeholder="Enter Your Cnic Number">
+          </label>
+          </div>
+      
+
+
+
+      <div class="row" style="margin-top: 2%; padding-top: 10%;">
+    <div class="column" style=" background-color: rgb(224,172,0); border: 1px solid rgb(1, 1, 61);">
+        <label>From:
+          <input type="text"  id="from" placeholder="Enter departure city">
+        </label><br>
+        </div>
+        
+        <div class="column" style=" background-color: rgb(224,172,0); border: 1px solid rgb(1, 1, 61);">
+        <label >To:
+          <input type="text"  id="to" placeholder="Enter destination city">
+        </label>
+        
+      </div>
+
+
+        <div class="column" style="background-color: rgb(224,172,0); border: 1px solid rgb(1, 1, 61);">
+        <label  style="padding: px;">Departure Date:
+          <input type="date" id="departureDate">
+        </label>
+        </div>
+
+
+        <div class="column" style="background-color:  rgb(224,172,0); border: 1px solid rgb(1, 1, 61);">
+        <label  style="padding: 20px;">Return Date:
+          <input type="date" id="returnDate">
+        </label>
+        </div>
+        
+      </div>
+
+        <button type="submit" style="background-color:  rgb(1, 1, 61); color:  rgb(224, 172, 0); height: 40px; margin-top: 5%; margin-left: 0%; width: 40%; " onclick="searchFlights()">BOOK </button>
+      
+      </form>
+      
+      <script>
+        function searchFlights() {
+          var from = document.getElementById("from").value;
+          var to = document.getElementById("to").value;
+          var departureDate = document.getElementById("departureDate").value;
+          var returnDate = document.getElementById("returnDate").value;
+      
+          // Use the values of the form inputs to search for flights
+      
+          // Example:
+          console.log("Searching for flights from " + from + " to " + to + " on " + departureDate + " and returning on " + returnDate);
+        }
+      </script>
+</div>
+</div>
+
+<footer>
+  <div class="logo">
+      <img src="image/logo.jpg" alt="">
+  </div>
+
+  <div class="list">
+      <a href="about.html" style="color: rgb(224, 172, 0);">
+          <li>About Us</li>
+      </a>
+      <a href="contact.html" style="color: rgb(224, 172, 0);">
+          <li>Contact Us</li>
+      </a>
+  </div>
+  <div class="p">
+      <p> Copyright &copy 2023 <a href="home.html">Wanderlusters.pk.</a>  All rights reserved</p>
+  </div>
+  <div class="disclaimer">
+
+      <p> <b style="font-size: 30px;">Disclaimer:</b> Wanderlusters is Pakistani based website. It
+          is largest
+          travel platform for people who want to travel around the world. Intresting thing about
+          this agency is
+          you can travel anywhere you want in low cost. We offers you good,interesting and
+          wonderful packages and
+          services. So what are you waiting for "BOOK AND TRAVEL". </p>
+  </div>
+</footer>
+
+</body>

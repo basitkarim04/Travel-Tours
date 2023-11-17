@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldives</title>
+    <style>
+        * {margin: 0;padding: 0;}
+
+
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 500px;
+          margin: auto;
+        }
+        .img-s{
+            height: 300px;
+            width: 452px;
+        }
+        
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: rgb(0, 0, 0);
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: rgb(224, 172, 0);
+        }
+
+
+
+
+
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+
+
+
+
+
+
+body{
+  background-color:rgb(1, 1, 61);
+}
+header{
+  animation: fade 4s;
+  border: 3px solid rgb(1, 1, 61);
+  height: 60px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color: rgb(1, 1, 61);
+  background-color: rgb(224, 172, 0);
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+
+.div-table{
+  margin-top: 30px;
+  height: 300px;
+  width: 100%;
+  display: block;
+}
+table{ 
+margin: auto;
+height: 300px;
+background-color:rgb(1, 1, 61);
+color: rgb(224, 172, 0);
+  width: 70%;
+  border: 5px solid rgba(0, 0, 0, 0.479);
+
+  font-size: 20px;
+  text-align: center;
+}
+th{
+  font-size: 25px;
+  font-weight: bold;
+}
+h2{
+  margin-left: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color:rgb(224, 172, 0) ;
+}
+.included{
+  font-size: 20px;
+  color: rgb(224, 172, 0);
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.included ul{
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 22px;
+}
+.excluded{
+  font-size: 20px;
+  color: rgb(224, 172, 0);
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.excluded ul{
+  margin-top: 20px;
+  margin-left: 40px;
+    font-size: 22px;}
+.to-do{
+  font-size: 20px;
+  color: rgb(224, 172, 0);
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.to-do ul{
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+button{
+  margin-left:47%;
+  height: 60px;
+  width: 150px;
+  background-color:rgb(224, 172, 0) ;
+  color:rgb(1, 1, 61) ;
+  text-align: center;
+  justify-content: center;
+  border: 0.5px solid rgb(224, 172, 0);
+  border-radius: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button a{
+  color:rgb(1, 1, 61) ;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
+
+
+
+.line{
+    height: 4px;
+    width: 100%;
+    background-color:rgb(224, 172, 0);
+}
+
+
+
+
+
+footer{
+    color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+text-align: center;}
+    .logo img{
+        width: 10%;
+        height: fit-content;
+    }
+    .list li{
+        margin-left: 20px;
+        display: inline-block;
+        justify-content: center;
+        font-size:30px;
+    }
+    footer b{
+        font-size:25px;
+        font-weight: bolder;
+
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .list li:hover{
+       color: white;
+       text-decoration: underline;
+    }
+    p a{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(224, 172, 0);
+    }
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+ 
+ width: 15px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: rgb(1, 1, 61); 
+ border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(224, 172, 0); 
+ border: 0.5px solid rgb(224, 172, 0);
+ border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: rgb(224, 160, 0); 
+}
+
+    </style>
+
+
+
+</head>
+<body>
+  <header>Maldives</header>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img  class="img-s" src="image/pack_maldives1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img  class="img-s" src="image/pack_maldives2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="img-s"  src="image/pack_maldives3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img  class="img-s" src="image/pack_maldives4.jpg" style="width:100%">
+      </div>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</div>
+<!-- text -->
+<div class="div-table">
+<table>
+  <tr>
+    <th>Tour Code</th>
+    <th>Maldives Tour Packages from Pakistan</th>
+    <th>Number of Nights</th>
+    <th>Starting Price per Person</th>
+    <th>Starting price for Couples</th>
+  </tr>
+  <tr>
+    <td>222</td>
+    <td>Ayala Ocean Maldives Promo Trip</td>
+    <td>6 Days / 5 Nights</td>
+    <td>120,000/-</td>
+    <td>215,000/-</td>
+  </tr>
+  <tr>
+    <td>223</td>
+    <td>Maldives Excursion Trip Packages</td>
+    <td>5 Days / 4 Nights</td>
+    <td>180,000/-</td>
+    <td>340,000/-</td>  
+  </tr>
+  <tr>
+    <td>224</td>
+    <td>Maldives Private Rsort Packages</td>
+    <td>5 Days / 4 Nights</td>
+    <td>225,000/-</td>
+    <td>430,000/-</td>
+  </tr>
+  <tr>
+    <td>225</td>
+    <td>Maldives Couple Honeymoon Packages</td>
+    <td>5 Days / 4 Nights </td>
+    <td>-</td>
+    <td>250,000/-</td>
+  </tr>
+  <tr>
+    <td>226</td>
+    <td>Discover Maldives Travelling</td>
+    <td>7 Days / 6 Nights</td>
+    <td>270,000/-</td>
+    <td>525,000/-</td>
+  </tr>
+
+
+</table> <br> <br>
+</div>
+
+<div class="included">
+<h2>Included:</h2>
+<ul>
+  <li>Hotel transfer by speed boat</li>
+  <li>Good Quality Meals(Breakfast, Lunch, Dinner)</li>
+  <li>Half Day or Full Day Adventure</li>
+  <li>Airport Transfer by Speed Boats or Sea Plane</li>
+  <li>Night Stay at Hotels</li>
+  <li>Water sports Activities(Local Island Only)</li>
+  <li>Sand Bank Tour with Lunch</li>
+  <li>visa</li>
+  <li>For Tour code (222) Places include : Fihalhohi Island, Bayadoo Island, Veligandu Island Beach</li>
+  <li>For Tour code (223) Places include : Baros Island, Huvahendhoo Island, Kanuhura Island</li>
+  <li>For Tour code (224) Places include : Whale Submarine, Haleveli Island, Dhigu Island </li>
+  <li>For Tour code (225) Places include : Male Atoll, Banana Reef , Fulhadhoo</li>
+  <li>For Tour code (226) Places include : Kudadoo Island, Fihalhohi Island, Huvahendhoo Island,  Whale Submarine</li>
+</ul>
+</div>
+<div class="excluded">
+  <h2>Excluded:</h2>
+  <ul>
+    <li>Any extra meal or refreshment</li>
+    <li>Early Check in or Late Check out</li>
+    <li>Any type of Entrance Fee or Porter Fee</li>
+    <li>Laundary or any extra food and drink</li>
+    <li>Insureance Liability or serious medication</li>
+    <li>Anything other than mention in Services Included </li>
+  </ul>
+</div>
+ <div class="to-do">
+  <h2>Things to do in Maldives Trip:</h2>
+  <ul>
+    <li>Parasailing</li>
+    <li>Scuba Diving</li>
+    <li>Fishing</li>
+    <li>Sand Bank Visit</li>
+    <li>Whale Submarine</li>
+    <li>Jet Ski Ride</li>
+    <li>Beach Dinner</li>
+  </ul>
+ </div>
+<a href="packBookingForm.html"> <button>Book Now</button></a>
+<div class="line"></div>
+<footer>
+  <div class="logo">
+      <img src="image/logo.jpg" alt="">
+  </div>
+  <div class="list">
+  <a href="about.html" style="color: rgb(224, 172, 0);"><li>About Us</li></a>
+  <a href="contact.html" style="color: rgb(224, 172, 0);"><li>Contact Us</li></a> </div> <br> <br>
+  <div class="p">
+    <p> Copyright &copy 2023 <a href="home.html">Wanderlusters.pk.</a>  All rights reserved</p>
+  </div> <br>
+  <div class="disclaimer">
+     
+     <p> <b style="font-size: 30px;">Disclaimer:</b> Wanderlusters is Pakistani based website. It is largest travel platform for people who want to travel around the world. Intresting thing about this agency is you can travel anywhere you want in low cost. We offers you good,interesting and wonderful packages and services. So what are you waiting for "BOOK AND TRAVEL". </p>
+  </div> <br>
+</footer>
+
+
+
+  <!-- javascript -->
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+  </script>
+</body>
+</html>

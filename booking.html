@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        header{
+    height: 15vh;
+    width: 100%;
+    color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+    display: flex;
+    flex-direction: row;
+
+}
+
+   .nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color:rgb(224, 172, 0);
+    font-weight: bolder;
+    text-align: center;
+   padding-top: 0px;
+   font-size: bolder;
+}
+.nav li a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.nav li:hover{
+    background-color:rgb(224, 172, 0);
+    color:  rgb(1, 1, 61);
+     display: block;
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+   li{ margin-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    height: 8.5vh;
+    text-decoration: none;
+    color:rgb(224, 172, 0);
+    font-weight: bold;
+    font-size: large;
+    
+
+   }
+header button{
+    width: 10vw;
+    color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+    border: 1px rgb(1, 1, 61) solid;
+    margin-left: 100px;
+    font-weight: bolder;
+    font-size: larger;
+}
+header button:hover{
+    background-color:rgb(224, 172, 0) ;
+    color: rgb(1, 1, 61);
+}
+.line{
+    background-color: rgb(224, 172, 0);
+    width: 100%;
+    height: 3px;
+}
+        .main{
+            background-color: rgb(1, 1, 61);
+            display: flex;
+justify-content: center;
+align-items: center;
+            height: 100vh;
+            width: 100%;
+
+        }
+        .div1{
+            margin-left: 50px;
+            height: 50vh;
+            width: 20vw;
+            background-color: rgb(224, 172, 0);
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 50%;
+            animation: fade 2s 200ms infinite;
+        }
+        .div1 a{
+            text-decoration: none;
+            color:  rgb(1, 1, 61) ;
+        }
+        .div2{
+            margin-left: 50px;
+            text-align: center;
+            height: 50vh;
+            width: 20vw;
+            background-color: rgb(224, 172, 0);
+            color:  rgb(1, 1, 61) ;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 50%;
+            animation: fade 2s 400ms infinite;
+        }
+        .div2 a{
+            text-decoration: none;
+            color:  rgb(1, 1, 61) ;
+        }
+        .div3{
+            margin-left: 50px;
+            text-align: center;
+            height: 50vh;
+            width: 20vw;
+            background-color: rgb(224, 172, 0);
+            color:  rgb(1, 1, 61) ;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 50%;
+            animation: fade 2s 600ms infinite;
+        }
+        .div3 a{
+            text-decoration: none;
+            color:  rgb(1, 1, 61) ;
+        }
+        footer{
+    color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+text-align: center;}
+    .logo img{
+        width: 10%;
+        height: fit-content;
+    }
+    .list{
+padding-left: 60px;
+    }
+    .list li{
+        margin-left: -40px;
+        display: inline-block;
+        justify-content: center;
+        font-size:30px;
+    }
+    footer b{
+        font-size:25px;
+        font-weight: bolder;
+
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .list li:hover{
+       color: white;
+       text-decoration: underline;
+    }
+    p a{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(224, 172, 0);
+    }
+    ::-webkit-scrollbar {
+ 
+ width: 13px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: rgb(1, 1, 61); 
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(224, 172, 0); 
+ border: 0.5px solid rgb(224, 172, 0);
+ border-radius: 20px;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.btn{
+  height: 99px;
+  display: block;
+  width: 10vw;
+  color: rgb(224, 172, 0);
+  background-color: rgb(1, 1, 61);
+  border: 1px rgb(1, 1, 61) solid;
+  margin-left: 100px;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/logo.jpg" alt="logo">
+        <div class="nav">
+           <a href="home.html"><li id="home">Home</li></a> 
+          <a href="packages.html"> <li id="pack">Packages</li></a> 
+           <a href="RentACar.html"><li id="car">Rent A Car</li> </a> 
+           <a href="hotel.html"><li id="hotel">Hotels</li> </a> 
+           <a href="flight.html"><li  id="flight">Flights</li> </a> 
+           <a href="booking.html"> <li  id="booking">Bookings</li></a>
+        </div>
+        </div>
+        <a style="text-decoration: none; list-style-type: none; color: rgb(224, 172, 0);
+        background-color: rgb(1, 1, 61);" href="login.html"><button class="btn">LOGIN</button></a>
+    </header>
+    <div class="line"></div>
+    <div class="main">
+        <div class="div1">
+          <a href="packBookingForm.html"> <h1>Packages<br>Booking<br>form</h1> </a> 
+        </div>
+        <div class="div2">
+          <a href="hotelBookingForm.html">  <h1>Hotels<br>Booking<br>form</h1> </a>
+        </div>
+        <div class="div3">
+          <a href="carBookingForm.html"><h1>Cars<br>Booking<br>form</h1></a>  
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="image/logo.jpg" alt="">
+        </div>
+        <div class="list">
+        <a href="about.html" style="color: rgb(224, 172, 0);"><li>About Us</li></a>
+        <a href="contact.html" style="color: rgb(224, 172, 0);"><li>Contact Us</li></a> </div> <br>
+        <div class="p">
+            <p> Copyright &copy 2023 <a href="home.html">Wanderlusters.pk.</a>  All rights reserved</p>
+        </div> <br>
+        <div class="disclaimer">
+           
+           <p> <b style="font-size: 30px;">Disclaimer:</b> Wanderlusters is Pakistani based website. It is largest travel platform for people who want to travel around the world. Intresting thing about this agency is you can travel anywhere you want in low cost. We offers you good,interesting and wonderful packages and services. So what are you waiting for "BOOK AND TRAVEL". </p>
+        </div> <br>
+    </footer>
+</body>
+</html>

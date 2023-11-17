@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 61);
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .div1 {
+            margin: auto;
+            font-weight: bolder;
+            height: fit-content;
+            width: 70%;
+            border-radius: 30px;
+            background-color: rgb(224, 172, 0);
+            text-align: center;
+            color: rgb(1, 1, 61);
+        }
+
+        label {
+            font-size: 25px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(1, 1, 61);
+            list-style-type: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        div{
+            font-size: 18px;
+        }
+
+        input {
+            font-weight: bolder;
+            width: 60%;
+            height: 30px;
+            border-radius: 20px;
+            border: 2px solid white;
+            padding: 5px;
+        }
+
+        .radio {
+            width: auto;
+            height: auto;
+        }
+
+        select {
+            width: 150px;
+            height: 30px;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+
+        .div2 {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .div2 label {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .div2 input {
+            width: 10%;
+            margin-left: 5px;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 60px;
+            width: 150px;
+            background-color: rgb(224, 172, 0);
+            color: rgb(1, 1, 61);
+            border: 0.5px solid rgb(1, 1, 61);
+            border-radius: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+
+            width: 13px;
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgb(1, 1, 61);
+
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(224, 172, 0);
+            border: 0.5px solid rgb(224, 172, 0);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="btn()">
+        <div class="div1">
+            <h1>Hotels Booking</h1> <br> <br>
+            <label>Pakistan</label><input type="radio" name="radio" class="radio" onclick="radio1()">
+            <label>International</label> <input type="radio" name="radio" class="radio" onclick="radio2()"> <br> <br>
+            <div id="div1" style="display: none;">
+                <label>Pakistan Hotels</label>
+                <select id="dropdown" placeholder="select">
+                    <option>Select</option>
+                    <option value="option1">Karachi</option>
+                    <option value="option2">Islamabad</option>
+                    <option value="option3">Lahore</option>
+                    <option value="option4">Multan</option>
+                    <option value="option5">Hunza Valley</option>
+                    <option value="option6">Swat Valley</option>
+                    <option value="option7">Naran</option>
+                    <option value="option8">Kaghan</option>
+                    <option value="option9">Skardu</option>
+                    <option value="option10">Gilgit</option>
+                </select>
+            </div>
+            <div id="div2" style="display: none;">
+                <label>International Hotels</label>
+                <select id="dropdown2">
+                    <option>Select</option>
+                    <option value="option11">Turkey</option>
+                    <option value="option12">UAE</option>
+                    <option value="option13">Singapore</option>
+                    <option value="option14">Thailand</option>
+                    <option value="option15">Azerbaijan Baku</option>
+                    <option value="option16">New Zealand</option>
+                    <option value="option17">England</option>
+                    <option value="option18">Maldives</option>
+                    <option value="option19">California</option>
+                </select>
+            </div><br>
+            <div class="hiiden">
+            <div id="karachiHotels" style="display: none;">
+                <input type="radio"  class="radio" name="karachiHotels"> <a href="karachiHotel1.html"> Marriot Hotel</a>
+                <input type="radio" class="radio" name="karachiHotels"> <a href="karachiHotel2.html"> Moven pick Hotel</a>
+                <input type="radio" class="radio" name="karachiHotels"> <a href="karachiHotel3.html"> Pearl continential Hotel</a>
+            </div>
+            <div id="islamabadHotels" style="display: none;">
+                <input type="radio" class="radio" name="islamabadHotels"><a href="islamabadHotel1"> Centauras Hotel Suites</a>
+                <input type="radio" class="radio" name="islamabadHotels"><a href="islamabadHotel2"> Islamabad Regalia Hotel</a>
+                <input type="radio" class="radio" name="islamabadHotels"><a href="islamabadHotel3"> Shelton's Ambassador</a>
+            </div>
+            <div id="lahoreHotels" style="display: none;">
+                <input type="radio" class="radio" name="lahoreHotels"><a href="lahoreHotels1.html"> Grand zittehad Bantique hotel</a>
+                <input type="radio" class="radio" name="lahoreHotels"><a href="lahoreHotels2.html"> Park Lane Hotel</a>
+                <input type="radio" class="radio" name="lahoreHotels"><a href="lahoreHotels3.html"> Pearl continenetal Lahore</a>
+            </div>
+            <div id="multanHotels" style="display: none;">
+                <input type="radio" class="radio" name="multanHotels"><a href="multanHotels1.html">Belmorris hotels & Resort</a> 
+                <input type="radio" class="radio" name="multanHotels"><a href="multanHotels2.html">Hotel royal Mansion</a> 
+                <input type="radio" class="radio" name="multanHotels"><a href="multanHotels3.html">Ramada By Wyndham Multan</a> 
+            </div>
+            <div id="hunzaHotels" style="display: none;">
+                <input type="radio" class="radio" name="hunzaHotels"><a href="hunzaHotels1.html"> Ayash Resort</a>
+                <input type="radio" class="radio" name="hunzaHotels"><a href="hunzaHotels2.html"> Hilltop Hotel</a>
+                <input type="radio" class="radio" name="hunzaHotels"><a href="hunzaHotels3.html"> Luxus Hunza</a>
+            </div>
+            <div id="swatHotels" style="display: none;">
+                <input type="radio" class="radio" name="swatHotels"><a href="swatHotels1.html"> Shelton Rezidor swat</a>
+                <input type="radio" class="radio" name="swatHotels"><a href="swatHotels2.html"> Lokal Rooms x Swat River</a>
+                <input type="radio" class="radio" name="swatHotels"><a href="swatHotels3.html"> Pearl Continental Hotel Malam Jabba</a>
+            </div>
+            <div id="naranHotels" style="display: none;">
+                <input type="radio" class="radio" name="naranHotels"><a href="naranHotels1.html"> Hotel demanchi</a>
+                <input type="radio" class="radio" name="naranHotels"><a href="naranHotels2.html"> Trout Lodges</a>
+                <input type="radio" class="radio" name="naranHotels"><a href="naranHotels3.html"> Hotel Chateau De North</a>
+            </div>
+            <div id="kaghanHotels" style="display: none;">
+                <input type="radio" class="radio" name="kagahanHotels"><a href="kaghanHotels1.html"> Walnut Cottage</a>
+                <input type="radio" class="radio" name="kagahanHotels"><a href="kaghanHotels2.html"> Abbot Hills Guest House</a>
+                <input type="radio" class="radio" name="kagahanHotels"><a href="kaghanHotels3.html"> Walnut Villa</a>
+            </div>
+            <div id="skarduHotels"style="display: none;">
+                <input type="radio" class="radio" name="skarduHotels"><a href="skarduHotels1.html"> Legend Hotel Skardu</a>
+                <input type="radio" class="radio" name="skarduHotels"><a href="skarduHotels2.html"> Arish Luxury Suites</a>
+                <input type="radio" class="radio" name="skarduHotels"><a href="skarduHotels3.html"> Beautiful Balishtan Lodge Skardu</a>
+            </div>
+            <div id="gilgitHotels" style="display: none;">
+                <input type="radio" class="radio" name="gilgitHotels"><a href="gilgitHotels1.html"> Ehsan-e-Bassi</a>
+                <input type="radio" class="radio" name="gilgitHotels"><a href="gilgitHotels2.html"> Gilgit Serena Hotel</a>
+                <input type="radio" class="radio" name="gilgitHotels"><a href="gilgitHotels3.html"> Horizon Resort Attabad Lake</a>
+            </div>
+            <div id="turkeyHotels" style="display: none;">
+                <input type="radio" class="radio" name="turkeyHotels"><a href="turkeyHotels1.html"> Wish More Hotel-Istanbul</a>
+                <input type="radio" class="radio" name="turkeyHotels"><a href="turkeyHotels2.html"> Swandor Hotel & Resprt-Antalya</a>
+                <input type="radio" class="radio" name="turkeyHotels"><a href="turkeyHotels3.html"> Holiday Inn Bursa-Bursa</a>
+            </div>
+            <div id="UAEHotels" style="display: none;">
+                <input type="radio" class="radio" name="UAEHotels"><a href="UAEHotels1.html"> Tilal Liwa Hotel-AbuDabi</a>
+                <input type="radio" class="radio" name="UAEHotels"><a href="UAEHotels2.html"> Kempinski Hotel Mall of the Emirates</a>
+                <input type="radio" class="radio" name="UAEHotels"><a href="UAEHotels3.html"> LUX-Opulent island Suite Side Burj Khalifa</a>
+            </div>
+            <div id="singaporeHotels" style="display: none;">
+                <input type="radio" class="radio" name="singaporeHotels"><a href="singaporeHotels1.html"> Hotel Traventline</a>
+                <input type="radio" class="radio" name="singaporeHotels"><a href="singaporeHotels2.html"> Hotel Telegraph</a>
+                <input type="radio" class="radio" name="singaporeHotels"><a href="singaporeHotels3.html"> V Hotel Lavendar</a>
+            </div>
+            <div id="thailandHotels" style="display: none;">
+                <input type="radio" class="radio" name="thailandHotels"><a href="thailandHotels1.html"> Solitaire Bangkok Sukhumvit-Bangkok</a>
+                <input type="radio" class="radio" name="thailandHotels"><a href="thailandHotels2.html"> Andamantra Resort and Villa Phuket-Phuket</a>
+                <input type="radio" class="radio" name="thailandHotels"><a href="thailandHotels3.html"> Hard Rock Hotel Pattaya-Pattaya</a>
+            </div>
+            <div id="azerbaijanHotels" style="display: none;">
+                <input type="radio" class="radio" name="azerbaijanHotels"><a href="azerbaijanHotels1.html"> Baku Marriott Hotel-Baku</a>
+                <input type="radio" class="radio" name="azerbaijanHotels"><a href="azerbaijanHotels2.html"> Deluxe park  Qusar Resort & Spa Hotel-Qusar</a>
+                <input type="radio" class="radio" name="azerbaijanHotels"><a href="azerbaijanHotels3.html"> Qafqaz Tufandag Mountain Resort Hotel-Gabala</a>
+            </div>
+            <div id="newzealandHotels" style="display: none;">
+                <input type="radio" class="radio" name="newzealandHotels"><a href="newzealandHotels1.html"> Imagine Beach Road_auckland</a>
+                <input type="radio" class="radio" name="newzealandHotels"><a href="newzealandHotels2.html"> Holiday Inn Queenstown Frankton Road-Queenstown</a>
+                <input type="radio" class="radio" name="newzealandHotels"><a href="newzealandHotels3.html"> Belmont Motor Inn-Christchurch</a>
+            </div>
+            <div id="englandHotels" style="display: none;">
+                <input type="radio" class="radio" name="englandHotels"><a href="englandHotels1.html"> Mowbray Court Hotel-London
+                <input type="radio" class="radio" name="englandHotels"><a href="englandHotels2.html"> The Edwaedian manchester,Raddison Collection Hotel-Manchester
+                <input type="radio" class="radio" name="englandHotels"><a href="englandHotels3.html"> Birmingham Central by Charles Hope-Birmingham
+            </div>
+            <div id="maldivesHotels" style="display: none;">
+                <input type="radio" class="radio" name="maldivesHotels"><a href="maldivesHotels1.html"> Amaya Kuda Rah
+                <input type="radio" class="radio" name="maldivesHotels"><a href="maldivesHotels2.html"> Centara Grand island Resort % Spa
+                <input type="radio" class="radio" name="maldivesHotels"><a href="maldivesHotels3.html"> Lily Beach Resort % Spa
+            </div>
+            <div id="californiaHotels" style="display: none;">
+                <input type="radio" class="radio" name="californiaHotels"><a href="californiaHotels1.html"> Four Season Hotel-san Francisco
+                <input type="radio" class="radio" name="californiaHotels"><a href="californiaHotels2.html"> The Lodge at Torrey Pines-San Diego
+                <input type="radio" class="radio" name="californiaHotels"><a href="californiaHotels3.html"> The Langham Huntington-Los Angeles
+            </div>
+        </div>
+<br> <br>
+            <label>Name:</label> <br> <br>
+            <input type="text" placeholder="Enter Name: " required> <br> <br>
+            <label>Email:</label> <br> <br>
+            <input type="email" placeholder="abcd@gmail.com" required> <br> <br>
+            <div class="div2">
+                <label>Adult</label> <br> <br>
+                <input type="number" value="01" selected> <br> <br>
+                <label>child</label> <br> <br>
+                <input type="number" value="01" selected> <br> <br>
+                <label>Room</label> <br> <br>
+                <input type="number" value="01" selected>
+            </div> <br> <br>
+            <label>Check-in Date:</label> <br> <br>
+            <input type="date"> <br> <br>
+            <label>Check-out Date:</label> <br> <br>
+            <input type="date"> <br> <br>
+        </div>
+        <button>Submit</button>
+    </form>
+    <script>
+        function radio1() {
+            document.getElementById("div1").style.display = "block";
+            document.getElementById("div2").style.display = "none";
+            if(div1.option[0].check){
+                document.getElementById('karachiHotels').stytle.display="block";
+            }
+        }
+        function radio2() {
+            document.getElementById("div1").style.display = "none";
+            document.getElementById("div2").style.display = "block";
+        }
+        document.getElementById("dropdown").addEventListener("change",function(){
+            if(this.value=="option1"){
+                document.getElementById("karachiHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+
+            }else if(this.value=="option2"){
+                document.getElementById("islamabadHotels").style.display="block";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+            else if(this.value=="option3"){
+                document.getElementById("lahoreHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+            else if(this.value=="option4"){
+                document.getElementById("multanHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+            else if(this.value=="option5"){
+                document.getElementById("hunzaHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+            else if(this.value=="option6"){
+                document.getElementById("swatHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+            else if(this.value=="option7"){
+                document.getElementById("naranHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+            else if(this.value=="option8"){
+                document.getElementById("kaghanHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                 document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+            else if(this.value=="option9"){
+                document.getElementById("skarduHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+                 document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+            else if(this.value=="option10"){
+                document.getElementById("gilgitHotels").style.display="block";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("skarduHotels").style.display="none";
+                 document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+            }
+        });
+
+        document.getElementById("dropdown2").addEventListener("change",function(){
+            if(this.value=="option11"){
+                document.getElementById("turkeyHotels").style.display="block";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+                 document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+            }
+            else  if(this.value=="option12"){
+                document.getElementById("UAEHotels").style.display="block";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+                 document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+            }
+            else  if(this.value=="option13"){
+                document.getElementById("singaporeHotels").style.display="block";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+                 document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+            }
+            else  if(this.value=="option14"){
+                document.getElementById("thailandHotels").style.display="block";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+                 document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+            }
+            else  if(this.value=="option15"){
+                document.getElementById("azerbaijanHotels").style.display="block";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+                 document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+            }
+            else  if(this.value=="option16"){
+                document.getElementById("newzealandHotels").style.display="block";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+                 document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+            }
+            else  if(this.value=="option17"){
+                document.getElementById("englandHotels").style.display="block";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+                 document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+            }
+            else  if(this.value=="option18"){
+                document.getElementById("maldivesHotels").style.display="block";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("californiaHotels").style.display="none";
+                 document.getElementById("skarduHotels").style.display="none";
+                document.getElementById("islamabadHotels").style.display="none";
+                document.getElementById("karachiHotels").style.display="none";
+                document.getElementById("lahoreHotels").style.display="none";
+                document.getElementById("multanHotels").style.display="none";
+                document.getElementById("hunzaHotels").style.display="none";
+                document.getElementById("swatHotels").style.display="none";
+                document.getElementById("naranHotels").style.display="none";
+                document.getElementById("kaghanHotels").style.display="none";
+                document.getElementById("gilgitHotels").style.display="none";
+            }
+            else  if(this.value=="option19"){
+                document.getElementById("californiaHotels").style.display="block";
+                document.getElementById("thailandHotels").style.display="none";
+                document.getElementById("UAEHotels").style.display="none";
+                document.getElementById("turkeyHotels").style.display="none";
+                document.getElementById("singaporeHotels").style.display="none";
+                document.getElementById("azerbaijanHotels").style.display="none";
+                document.getElementById("newzealandHotels").style.display="none";
+                document.getElementById("englandHotels").style.display="none";
+                document.getElementById("maldivesHotels").style.display="none";
+            }
+        });
+
+        function btn() {
+            confirm("Your Booking has been Submitted. Shortly you will recieve  confirmation Email!");
+        }
+    </script>
+</body>
+
+</html>

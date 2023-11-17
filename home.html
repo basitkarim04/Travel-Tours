@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="icon"  href="image/alto.jpg">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header style="border-bottom:  3px solid rgb(224, 172, 0) ;">
+        <img src="image/logo.jpg" alt="logo">
+        <div class="nav">
+          <a href="home.html">
+            <li id="home">Home</li>
+          </a>
+          <a href="packages.html">
+            <li id="pack">Packages</li>
+          </a>
+          <a href="RentACar.html">
+            <li id="car">Rent A Car</li>
+          </a>
+          <a href="hotel.html">
+            <li id="hotel">Hotels</li>
+          </a>
+          <a href="flight.html">
+            <li id="flight">Flights</li>
+          </a>
+          <a href="booking.html">
+            <li id="booking">Bookings</li>
+          </a>
+        </div>
+         <a href="login.html"><button class="btn">LOGIN</button></a>
+      </header>
+          <p class="pictext">
+        <b style="font-size: 50px; color: rgb(224, 172, 0); margin-left: 19%;">
+
+            Plan your Trip 
+            where TO Next?
+        </b>
+    </p>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="image/-Baku-Azerbaijan.webp" width="100%" height="600px" >
+            <div class="text">AZERBAIJAN</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 7</div>
+            <img src="image/fairy-meadows homepic.jpg"width="100%" height="600px"  >
+            <div class="text">FAIRY MEDOWS "PAKISTAN"</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="image/BADSHASHI MOSQUE homepic.jpg" width="100%" height="600px" >
+            <div class="text">BADSHASHI MOSQUE</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="image/dubai homepic.jpg"  width="100%" height="600px" >
+            <div class="text">DUBAI</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="image/Istanbul homepic.jpg"  width="100%" height="600px">
+            <div class="text">ISTANBUL</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="image/khaghan.jpg" width="100%" height="600px" >
+            <div class="text">KHAGHAN</div>
+        </div>
+
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="image/Bangkok HOME PIC.jpg" width="100%" height="600px" >
+            <div class="text">BANGKOK</div>
+        </div>
+
+
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        
+        
+        function loginpage() {
+            window.location.href = "FORM.HTML";
+            alert("Your Form has been Submitted. ");
+        }
+    </script>
+
+    <p style="text-align: center; color: rgb(224, 172, 0) ; font-weight: bolder;  font-size: 50px;">
+        INTERNATIONAL TOURS </p>
+
+    <div class="row" style="margin-left: 5%;">
+        <section>
+            <div class="aside">
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> TURKEY
+                    </b> </p>
+                <a href="turkey.html">
+                    <div class="past">
+                        <ol> <img src="image/Istanbul homepic.jpg" width="100%" height="100px"> </ol>
+                    </div>
+                </a>
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> "How
+                        happy is the one who says I am a Turk!"
+                    </b> </p>
+        </section>
+
+        <section>
+            <div class="aside">
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> DUBAI
+                    </b> </p>
+                <a href="dubai.html">
+                    <div class="past">
+                        <ol> <img src="image/dubai homepic.jpg" width="100%" height="100%"> </ol>
+                    </div>
+                </a>
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> “There's
+                        no better place than Dubai.”
+                    </b> </p>
+        </section>
+
+        <section>
+            <div class="aside">
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> SINGAPOUR
+                    </b> </p>
+                <a href="singapour.html">
+                    <div class="past">
+                        <ol> <img src="image/Singapore hom epic.jpg" width="100%" height="100%"> </ol>
+                    </div>
+                </a>
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; display: flex; justify-content: center;
+                align-items: center; text-align: center; height: 36px;">
+                    <b> “Passion Made Possible"
+                    </b>
+                </p>
+        </section>
+
+        <section>
+            <div class="aside">
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> THAILAND
+                    </b> </p>
+                <a href="bangkok.html">
+                    <div class="past">
+                        <ol> <img src="image/Bangkok HOME PIC.jpg" width="100%" height="100%"> </ol>
+                    </div>
+                </a>
+                <p
+                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ;display: flex; justify-content: center; text-align: center;">
+                    <b> "Krung
+                        Thep," The city of angels
+
+                    </b> </p>
+        </section>
+
+        <section>
+            <div class="aside">
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b>
+                        AZERBAIJAN
+                    </b> </p>
+                <a href="azerbaijan.html">
+                    <div class="past">
+                        <ol> <img src="image/Azerbaijan-homepic.jpg" width="100%" height="100%"> </ol>
+                    </div>
+                </a>
+                <p
+                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ;display: flex; justify-content: center; text-align: center;">
+                    <b>The flag
+                        once raised will never fall!
+                    </b> </p>
+        </section>
+
+        <section>
+            <div class="aside">
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> NEW
+                        ZEALAND
+                    </b> </p>
+                <a href="newzealand.html">
+                    <div class="past">
+                        <ol> <img src="image/New-Zealand homepicc.jpeg" width="100%" height="100%"> </ol>
+                    </div>
+                </a>
+                <p
+                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; display: flex; justify-content: center; align-items: center; text-align: center; height: 36px;">
+                    <b>"100% Pure"
+                    </b>
+                </p>
+        </section>
+
+        <section>
+            <div class="aside" style="margin-left: 30%;">
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> ENGLAND
+                    </b> </p>
+                <a href="london.html">
+                    <div class="past">
+                        <ol> <img src="image/london_HOMEPIC.jpg" width="100%" height="100%"> </ol>
+                    </div>
+                </a>
+                <p
+                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; display: flex; justify-content: center; text-align: center;">
+                    <b> “The man
+                        Blessed plot, this earth, this England.”
+                    </b> </p>
+        </section>
+
+
+        <section>
+            <div class="aside">
+                <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b> MALDIVES
+                    </b> </p>
+                <a href="maldives.html">
+                    <div class="past">
+                        <ol> <img src="image/maldives homepic.webp" width="100%" height="100%"> </ol>
+                    </div>
+                </a>
+                <p
+                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ;display: flex; justify-content: center;  align-items: center; text-align: center;  height: 36px;">
+                    <b> “The Sunny Side of Life.”
+                    </b>
+                </p>
+        </section>
+    </div>
+    </div>
+
+
+    <div class="row">
+        <article>
+            <p
+                style="text-align: center;  color: rgb(224, 172, 0); font-size: 50px;">
+                NATIONAL TOURS </p>
+
+            <div class="row" style="margin-left: 5%;">
+                <section>
+                    <div class="aside">
+                        <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b>
+                                HUNZA VALLEY
+                            </b> </p>
+                        <a href="hunza.html">
+                            <div class="past">
+                                <ol> <img src="image/Hunza-valley-homepic.jpg" width="100%"> </ol>
+                            </div>
+                        </a>
+                        <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b>
+                                "Natural Beauty Of Gilgit Baltistan"
+                            </b> </p>
+                </section>
+
+
+                <section>
+                    <div class="aside">
+                        <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b>
+                                SWAT VALLEY
+                            </b> </p>
+                        <a href="swat.html">
+                            <div class="past">
+                                <ol> <img src="image/swatvalley homepic.jpg" width="100%" height="100%"> </ol>
+                            </div>
+                        </a>
+                        <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b>
+                                "The scenic and the Historic"
+                            </b> </p>
+                </section>
+
+                <div class="row">
+                    <section>
+                        <div class="aside">
+                            <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;">
+                                <b> SARAN KAGHAN
+                                </b> </p>
+                            <a href="saran.html">
+                                <div class="past">
+                                    <ol> <img src="image/khaghan.jpg" width="100%" height="100%"> </ol>
+                                </div>
+                            </a>
+                            <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;">
+                                <b>
+                                    "Power to Heal Abington Memorial Hospital"
+                                </b> </p>
+                    </section>
+
+
+                    <section>
+                        <div class="aside">
+                            <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;">
+                                <b> SKARDU VALLEY
+                                </b> </p>
+                            <a href="skardu.html">
+                                <div class="past">
+                                    <ol> <img src="image/skardu.jpg" width="100%" height="100%"> </ol>
+                                </div>
+                            </a>
+                            <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;">
+                                <b>
+                                    "Stay with friends in Adventures"
+                                </b> </p>
+                    </section>
+                    <div class="row">
+                        <section>
+                            <div class="aside">
+                                <p
+                                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;">
+                                    <b> FAIRY MEADOWS
+                                    </b> </p>
+                                <a href="fairy.html">
+                                    <div class="past">
+                                        <ol> <img src="image/fairy-meadows homepic.jpg" width="100%"> </ol>
+                                    </div>
+                                </a>
+                                <p
+                                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;">
+                                    <b>
+                                        "It's the heart of exotic North Pakistan"
+                                    </b> </p>
+                        </section>
+
+
+                        <section>
+                            <div class="aside">
+                                <p
+                                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;">
+                                    <b> BADSHASHI MOSQUE
+                                    </b> </p>
+                                <a href="mosque.html">
+                                    <div class="past">
+                                        <ol> <img src="image/BADSHASHI MOSQUE homepic.jpg" width="100%"> </ol>
+                                    </div>
+                                </a>
+                                <p
+                                    style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;">
+                                    <b>
+                                        "The Biggest Mosque in the world"
+                                    </b> </p>
+                        </section>
+                    </div></div></div>
+       
+    <article style="margin-left: 5% ;">
+        <p
+            style="text-align: center;  color: rgb(224, 172, 0); font-size: 50px;">
+            Our Past Tours </p>
+        <div class="row">
+            <section>
+                <div class="column">
+                    <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;font-weight: bolder; font-size: 30px;"> <b>
+                            <a style="text-decoration: none; list-style-type: none; color:rgb(1, 1, 61);" href="privategrouptours.html"> Private Group Tours </a>
+                        </b> </p>
+
+                    <img src="image/dubai group tour.jpg" width="100%" height="200px">
+                    <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b>
+                            Discover Adrina with her family
+                        </b> </p>
+            </section>
+
+            <section>
+                <div class="column">
+                    <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; font-weight: bolder; font-size: 30px; text-align: center;"> <b>
+                            Study Tours
+                        </b> </p>
+
+                    <img src="image/studytour.jpg" width="100%" height="200px">
+                    <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b>
+                            Students from University
+                        </b> </p>
+            </section>
+
+            <section>
+                <div class="column">
+                    <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ;  font-weight: bolder; font-size: 30px; text-align: center;"> <b>
+                            visitor Tours
+                        </b> </p>
+
+                    <img src="image/visitortours.jpg" width="100%" height="200px">
+                    <p style="color: rgb(1, 1, 61); background-color: rgb(224, 172, 0) ; text-align: center;"> <b>
+                            Whole Family Tours
+                        </b> </p>
+            </section>
+        </div>
+    </article>
+                     </div> </div> </div> </article> </div> 
+
+
+                    <footer>
+                        <div class="logo">
+                            <img src="image/logo.jpg" alt="">
+                        </div>
+
+                        <div class="list">
+                            <a href="about.html" style="color: rgb(224, 172, 0);">
+                                <li>About Us</li>
+                            </a>
+                            <a href="contact.html" style="color: rgb(224, 172, 0);">
+                                <li>Contact Us</li>
+                            </a>
+                        </div>
+                        <div class="p">
+                            <p> Copyright &copy 2023 <a href="home.html">Wanderlusters.pk.</a>  All rights reserved</p>
+                        </div>
+                        <div class="disclaimer">
+
+                            <p> <b style="font-size: 30px;">Disclaimer:</b> Wanderlusters is Pakistani based website. It
+                                is largest
+                                travel platform for people who want to travel around the world. Intresting thing about
+                                this agency is
+                                you can travel anywhere you want in low cost. We offers you good,interesting and
+                                wonderful packages and
+                                services. So what are you waiting for "BOOK AND TRAVEL". </p>
+                        </div>
+                    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <style>
+      
+        body {font-family: Arial, Helvetica, sans-serif;
+        background-image: url(image/bggg.png);}
+        * {margin: 0; padding: 0;}
+        form{
+          padding:20px;
+          margin-left: -80px;
+          width: 100%;
+          background-color: rgb(1, 1, 61);
+        }
+        
+        
+        input[type=text], input[type=password] {
+          width: 70%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          border-radius: 10px;
+          color: white;
+          padding: 14px 20px;
+   margin-top: 10px;
+  padding-left: -100px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        button:hover {
+          opacity:1;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          padding: 14px 20px;
+          color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+        }
+        
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+
+          color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+          display: inline;
+          width: 20%;
+          margin-left: 45%;
+        }
+        
+        /* Add padding to container elements */
+        .container {
+          padding: 16px;
+        }
+        
+        /* Clear floats */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        button a{
+          text-decoration: none;
+          list-style-type: none;
+          color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+
+        }
+        
+        @media screen and (max-width: 300px) {
+          .cancelbtn, .signupbtn {
+             width: 50%;
+          }
+        }
+        /* width */
+        ::-webkit-scrollbar {
+
+width: 13px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: rgb(255, 255, 255);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(1, 1, 61);
+border: 0.5px solid rgb(1, 1, 61);
+border-radius: 20px;
+}
+        </style>
+        
+    <head>
+    <title>Forms</title>
+
+</head>
+
+
+<body>
+  <h1 style="text-align: center;
+color:  rgb(1, 1, 61);margin-bottom: 20px; font-size: 50px;
+font-family: 'Times New Roman', Times, serif; margin-top: 0%;">Sign Up</h1>
+    <ol style="text-align: center; width: 40%; margin-left: 33%; background-color:  rgb(1, 1, 61); color:  rgb(224, 172, 0);"></olstyle>
+<form>
+    <label style="font: 1em sans-serif;">Name:</label><br>
+    <input type="text" name="f_name" placeholder="Enter full name" ><br>
+    <label style="font: 1em sans-serif;">Email</label><br>
+    <input type="text" name="Email" placeholder="Enter Email"><br>
+    <label style="font: 1em sans-serif;">Password:</label><br>
+    <input type="password" name="password" placeholder="Enter Password"><br>
+    <label style="font: 1em sans-serif;">Age:</label><br>
+        <input type="checkbox" name="under 13" value="on"><label style="font: 1em sans-serif;">under 30</label><br>
+        <input type="checkbox" name="above 13" value="on">  40 or above 
+        <input type="checkbox" name="above 13" value="on"> Family 
+
+    <label style="font: 1em sans-serif;">Biography:</label><br>
+    <input type="text" name="BIOGRAPHY" placeholder="BIOGRAPHY"><br>
+    <label style="font: 1em sans-serif;">Job Role:</label><br>
+    <input type="text" name="Business Owner" placeholder="Business Owner"><br>
+   
+</ol>
+<div class="clearfix" style="margin-right: 100px;">
+    
+    <button type="submit" class="signupbtn">Sign Up</button>
+    <button type="button" class="cancelbtn">Cancel</button>
+    <button type="button" class="cancelbtn"><a href="login.html">login</a> </button>
+  </div>
+  
+</form>
+</body></html>

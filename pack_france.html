@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>France</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+
+    /* slideshow */
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .img-s {
+      height: 300px;
+      width: 452px;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: rgb(224, 172, 0);
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+
+    body {
+      background-color: rgb(1, 1, 61);
+    }
+
+    header {
+      animation: fade 4s;
+      border: 3px solid rgb(1, 1, 61);
+      height: 60px;
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+      font-size: 50px;
+      font-weight: bolder;
+      color: rgb(1, 1, 61);
+      background-color: rgb(224, 172, 0);
+      margin-bottom: 20px;
+      border-radius: 30px;
+    }
+
+    
+    .pack1 {
+      padding-left: 10px;
+    }
+    
+    p {
+      color: rgb(224, 172, 0);
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 50px;
+      color: rgb(224, 172, 0);
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: rgb(224, 172, 0);
+    }
+
+    table {
+      border: 3px solid black;
+      color: rgb(224, 172, 0);
+      background-color: rgb(1, 1, 61);
+      height: 300px;
+      width: 70%;
+      margin: auto;
+      text-align: center;
+      font-size: 20px;
+    }
+    
+    th {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .included {
+      font-size: 20px;
+      color: rgb(224, 172, 0);
+      margin-left: 10px;
+      margin-top: 30px;
+    }
+    
+    .included ul {
+      margin-top: 20px;
+      margin-left: 40px;
+      font-size: 22px;
+    }
+
+    .excluded {
+      font-size: 20px;
+      color: rgb(224, 172, 0);
+      margin-left: 10px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .excluded ul {
+      margin-top: 20px;
+      margin-left: 40px;
+      font-size: 22px;
+    }
+    
+    button {
+      margin-left: 47%;
+      height: 60px;
+      width: 150px;
+      background-color: rgb(224, 172, 0);
+      color: rgb(1, 1, 61);
+      text-align: center;
+      justify-content: center;
+      border: 0.5px solid rgb(224, 172, 0);
+      border-radius: 30px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button a {
+      color: rgb(1, 1, 61);
+      text-decoration: none;
+      list-style-type: none;
+    }
+
+    .line {
+      height: 4px;
+      width: 100%;
+      background-color: rgb(224, 172, 0);
+    }
+    
+
+
+
+
+    /* footer */
+    footer {
+      color: rgb(224, 172, 0);
+      background-color: rgb(1, 1, 61);
+      text-align: center;
+    }
+
+    .logo img {
+      width: 10%;
+      height: fit-content;
+    }
+
+    .list li {
+      margin-left: 20px;
+      display: inline-block;
+      justify-content: center;
+      font-size: 30px;
+    }
+    
+    footer b {
+      font-size: 25px;
+      font-weight: bolder;
+      
+    }
+    
+    footer p {
+      font-size: 20px;
+    }
+
+    .list li:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    p a{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(224, 172, 0);
+    }
+
+
+
+
+
+/* scrollbar */
+
+    /* width */
+    ::-webkit-scrollbar {
+      
+      width: 15px;
+      
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: rgb(1, 1, 61);
+      border-radius: 20px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgb(224, 172, 0);
+      border: 0.5px solid rgb(224, 172, 0);
+      border-radius: 20px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(224, 160, 0);
+    }
+
+
+
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+    
+      to {
+        opacity: 1
+      }
+    }
+    </style>
+</head>
+
+<body>
+  <header>France</header>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img class="img-s" src="image/pack_france1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img class="img-s" src="image/pack_france2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img class="img-s" src="image/pack_france3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img class="img-s" src="image/pack_france4.jpg" style="width:100%">
+    </div>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+  <!-- text -->
+  <div class="pack1">
+    <h1 style="margin-left: 200px; font-size: 60px;">France Tour Packages from Pakistan</h1>
+    <h1> France 5 Nights / 6 Days:</h1>
+    <h2>Hightlights:</h2>
+    <p>Effiel Tower-Louvre Meuseum-Palace of Versailles-Cote d'Azur-Mont Saint-Michel-Loire Valley Chateaux-Provence</p>
+  </div>
+  <table>
+    <tr>
+      <th>Tour Code</th>
+      <th></th>
+      <th>Package Price of <br> 3 Star</th>
+      <th>Package Price of <br> 4 Star</th>
+      <th>Package Price of <br> 5 Star</th>
+    </tr>
+    <tr>
+      <td>241</td>
+      <td>DBL/Twin Sharing</td>
+      <td>PKR 172,000/-</td>
+      <td>PKR 181,000/-</td>
+      <td>PKR 204,950/-</td>
+    </tr>
+    <tr>
+      <td>242</td>
+      <td>TPL Sharing</td>
+      <td>PKR 164,476/-</td>
+      <td>PKR 175,910/-</td>
+      <td>PKR 198,568/-</td>
+    </tr>
+    <tr>
+      <td>243</td>
+      <td>Quad Sharing</td>
+      <td>PKR 154,700/-</td>
+      <td>PKR 164,456/-</td>
+      <td>PKR 184,705</td>
+    </tr>
+    <tr>
+      <td colspan="5">Visa Fee: 20,500(Per Person)</td>
+    </tr>
+
+  </table>
+  <div class="included">
+    <h2>Included:</h2>
+    <ul>
+      <li>Disney Land Tour with 1 Day Pass</li>
+      <li>5 Nights Stay in Paris</li>
+      <li>1 Day Hop on Hop off Pass Tour</li>
+      <li>Paris by Night City Tour & Lido Show</li>
+      <li>Hotel Accommodation</li>
+      <li>Daily Breakfast</li>
+      <li>Tours as mention above</li>
+      <li>Return Airport Transfer</li>
+      <li>For Tour code (241, 242, 243) Places include : Effiel Tower-Louvre Meuseum-Palace of Versailles-Cote
+        d'Azur-Mont Saint-Michel-Loire Valley Chateaux-Provence</li>
+    </ul>
+  </div>
+  <div class="excluded">
+    <h2>Excluded:</h2>
+    <ul>
+      <li>Internal Train Ticket</li>
+      <li>Train Station Pick up Transfers</li>
+      <li>Dinner and lunch</li>
+      <li>Airline Tickets</li>
+      <li>Anything other than mention in Services Included </li>
+    </ul>
+  </div> <br> <br>
+  <div class="pack2">
+    <h1>France 3 Nights / 4 Days Package: </h1>
+    <h2>Highlights:</h2>
+    <p>Effiel Tower-Louvre Meuseum-Palace of Versailles-Cote d'Azur-Mont Saint-Michel-Loire Valley Chateaux-Provence</p>
+  </div>
+  <table>
+    <tr>
+      <th>Tour Code</th>
+      <th></th>
+      <th>Package Price of <br> 3 Star</th>
+      <th>Package Price of <br> 4 Star</th>
+      <th>Package Price of <br> 5 Star</th>
+    </tr>
+    <tr>
+      <td>245</td>
+      <td>DBL/Twin Sharing</td>
+      <td>PKR 111,700/-</td>
+      <td>PKR 116,980/-</td>
+      <td>PKR 126,655/-</td>
+    </tr>
+    <tr>
+      <td>246</td>
+      <td>TPL Sharing</td>
+      <td>PKR 98,500/-</td>
+      <td>PKR 110,823/-</td>
+      <td>PKR 130,173/-</td>
+    </tr>
+    <tr>
+      <td>247</td>
+      <td>Quad Sharing</td>
+      <td>PKR 104,789/-</td>
+      <td>PKR 102,900/-</td>
+      <td>PKR 1114,341</td>
+    </tr>
+  </table>
+  <div class="included">
+    <h2>Included:</h2>
+    <ul>
+      <li>Disney Land Tour with 1 Day Pass</li>
+      <li>5 Nights Stay in Paris</li>
+      <li>1 Day Hop on Hop off Pass Tour</li>
+      <li>Paris by Night City Tour & Lido Show</li>
+      <li>Hotel Accommodation</li>
+      <li>Daily Breakfast</li>
+      <li>Tours as mention above</li>
+      <li>Return Airport Transfer</li>
+      <li>visa</li>
+      <li>For Tour code (245, 246, 247) Places include : Effiel Tower-Louvre Meuseum-Palace of Versailles-Cote
+        d'Azur-Mont Saint-Michel-Loire Valley Chateaux-Provence</li>
+    </ul>
+  </div>
+  <div class="excluded">
+    <h2>Excluded:</h2>
+    <ul>
+      <li>Internal Train Ticket</li>
+      <li>Train Station Pick up Transfers</li>
+      <li>Dinner and lunch</li>
+      <li>Airline Tickets</li>
+      <li>Anything other than mention in Services Included </li>
+    </ul>
+  </div>
+  <a href="packBookingForm.html"><button>Book Now</button></a>
+  <div class="line"></div>
+  <footer>
+    <div class="logo">
+      <img src="image/logo.jpg" alt="">
+    </div>
+    <div class="list">
+      <a href="about.html" style="color: rgb(224, 172, 0);">
+        <li>About Us</li>
+      </a>
+      <a href="contact.html" style="color: rgb(224, 172, 0);">
+        <li>Contact Us</li>
+      </a>
+    </div> <br> <br>
+    <div class="p">
+      <p> Copyright &copy 2023 <a href="home.html">Wanderlusters.pk.</a>  All rights reserved</p>
+    </div>
+    <div class="disclaimer">
+
+      <p> <b style="font-size: 30px;">Disclaimer:</b> Wanderlusters is Pakistani based website. It is largest travel
+        platform for people who want to travel around the world. Intresting thing about this agency is you can travel
+        anywhere you want in low cost. We offers you good,interesting and wonderful packages and services. So what are
+        you waiting for "BOOK AND TRAVEL". </p>
+    </div>
+  </footer>
+
+
+
+  <!-- javascript -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+  </script>
+</body>
+
+</html>

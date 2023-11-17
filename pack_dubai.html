@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai</title>
+    <style>
+        * {margin: 0;padding: 0;}
+
+
+
+
+/* slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.img-s{
+    height: 300px;
+    width: 452px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(224, 172, 0);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+body{
+background-color:rgb(1, 1, 61);
+}
+header{
+  animation: fade 4s;
+  border: 3px solid rgb(1, 1, 61);
+  height: 60px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color: rgb(1, 1, 61);
+  background-color: rgb(224, 172, 0);
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+ul li{
+  margin-top: 10px;
+  color:rgb(224, 172, 0);
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 23px;
+}
+h1{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: rgb(224, 172, 0);
+}
+h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+  color:rgb(224, 172, 0) ;
+}
+table{
+  border: 3px solid black;
+  color: rgb(224, 172, 0);
+  background-color: rgb(1, 1, 61);
+  height: 300px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+}
+th{
+  font-size: 25px;
+  font-weight: bold;
+}
+.included{
+  font-size: 20px;
+  color: rgb(224, 172, 0);
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.included ul{
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 22px;
+}
+.excluded{
+  font-size: 20px;
+  color: rgb(224, 172, 0);
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.excluded ul{
+  margin-top: 20px;
+  margin-left: 40px;
+    font-size: 22px;}
+    button{
+  margin-left:47%;
+  height: 60px;
+  width: 150px;
+  background-color:rgb(224, 172, 0) ;
+  color:rgb(1, 1, 61) ;
+  text-align: center;
+  justify-content: center;
+  border: 0.5px solid rgb(224, 172, 0);
+  border-radius: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button a{
+  color:rgb(1, 1, 61) ;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
+
+.line{
+    height: 4px;
+    width: 100%;
+    background-color:rgb(224, 172, 0);
+}
+
+
+
+
+footer{
+    color:rgb(224, 172, 0);
+    background-color: rgb(1, 1, 61);
+text-align: center;}
+    .logo img{
+        width: 10%;
+        height: fit-content;
+    }
+    .list li{
+        margin-left: 20px;
+        display: inline-block;
+        justify-content: center;
+        font-size:30px;
+    }
+    footer b{
+        font-size:25px;
+        font-weight: bolder;
+
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .list li:hover{
+       color: white;
+       text-decoration: underline;
+    }
+    p a{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(224, 172, 0);
+    }
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+ 
+ width: 15px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: rgb(1, 1, 61); 
+ border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(224, 172, 0); 
+ border: 0.5px solid rgb(224, 172, 0);
+ border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: rgb(224, 160, 0); 
+}
+    </style>
+</head>
+<body>
+  <header>Dubai</header>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img  class="img-s" src="image/pack_dubai1.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img  class="img-s" src="image/pack_dubai2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="img-s"  src="image/pack_dubai3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img  class="img-s" src="image/pack_dubai4.jpg" style="width:100%">
+      </div>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</div>
+<!-- text -->
+<h1 style="margin-left: 120px; font-size: 60px;">5 Days Dubai Tour Packages From Pakistan:</h1>
+<table>
+  <tr>
+    <th>Tour Code</th>
+    <th>From</th>
+    <th>To</th>
+    <th>Cost/Price</th>
+  </tr>
+  <tr>
+    <td>261</td>
+    <td>Lahore</td>
+    <td>Dubai</td>
+    <td>PKR 140,000/-</td>
+  </tr>
+  <tr>
+    <td>262</td>
+    <td>Islamabad</td>
+    <td>Dubai</td>
+    <td>PKR 135,000/-</td>
+  </tr>
+  <tr>
+    <td>263</td>
+    <td>Karachi</td>
+    <td>Dubai</td>
+    <td>PKR 145,000/-</td>
+  </tr>
+</table>
+<h2 style="margin-top: 10px;">Places to visit in Dubai Tour</h2>
+<ul>
+  <li>Explore Burj Khalifa</li>
+  <li>Visit Dubai Mall </li>
+  <li>Al Qudra Cycle Path</li>
+  <li>Dubai Creek Trip</li>
+  <li>Sightseeing Dubai Fountain</li>
+  <li>Discover Dubai Museum</li>
+  <li>Wild Wadi Water Park Tour</li>
+  <li>Ski Dubai Excursion</li>
+  <li>Dubai Cruise Dinner</li>
+  <li>Visit Jumeirah Beach</li>
+  <li>Shopping Mall of the Emirates</li>
+  <li>Dybai Ice Rink Tour</li>
+  <li>Marina Beach Journey </li>
+</ul>
+<div class="included">
+  <h2>Included:</h2>
+  <ul>
+    <li>Luxury Air Condition Transport</li>
+    <li>Return Air Ticket</li>
+    <li>3 Times Good Quality Meal(Breakfast, Lunch, dinner)</li>
+    <li>Airpost Transport</li>
+    <li>Services of Guide</li>
+    <li>Night Stay at Hotels</li>
+    visa
+    <li>For Tour code (261, 262, 263) Places include : Explore Burj Khalifa
+      , Visit Dubai Mall
+      , Al Qudra Cycle Path
+      , Dubai Creek Trip
+      , Sightseeing Dubai Fountain
+      , Discover Dubai Museum
+      , Wild Wadi Water Park Tour
+      , Ski Dubai Excursion
+      , Dubai Cruise Dinner
+      , Visit Jumeirah Beach
+      , Shopping Mall of the Emirates
+      , Dybai Ice Rink Tour
+      , Marina Beach Journey </li>
+
+  </ul>
+</div>
+<div class="excluded">
+  <h2>Excluded:</h2>
+  <ul>
+    <li>Any Extra Meal or Refreshment</li>
+    <li>Extra jeeps due to road blockadge</li>
+    <li>Evacuatiom due to natural phenomena</li>
+    <li>Insurance liability or serious medication</li>
+    <li>Any type of Tickets</li>
+    <li>Laundary or any extra food or drink </li>
+    <li>Anything oyher than mention in services Included</li>
+  </ul>
+</div>
+<a href="packBookingForm.html"><button>Book Now</button></a>
+<div class="line"></div>
+<footer>
+  <div class="logo">
+      <img src="image/logo.jpg" alt="">
+  </div>
+  <div class="list">
+  <a href="about.html" style="color: rgb(224, 172, 0);"><li>About Us</li></a>
+  <a href="contact.html" style="color: rgb(224, 172, 0);"><li>Contact Us</li></a> </div> <br> <br>
+  <div class="p">
+    <p> Copyright &copy 2023 <a href="home.html">Wanderlusters.pk.</a>  All rights reserved</p>
+  </div> <br>
+  <div class="disclaimer">
+     
+     <p> <b style="font-size: 30px;">Disclaimer:</b> Wanderlusters is Pakistani based website. It is largest travel platform for people who want to travel around the world. Intresting thing about this agency is you can travel anywhere you want in low cost. We offers you good,interesting and wonderful packages and services. So what are you waiting for "BOOK AND TRAVEL". </p>
+  </div> <br>
+</footer>
+<!-- javascript -->
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+  </script>
+</body>
+</html>

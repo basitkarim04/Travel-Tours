@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 61);
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .div1 {
+            margin: auto;
+            font-weight: bolder;
+            height: fit-content;
+            width: 70%;
+            border-radius: 30px;
+            background-color: rgb(224, 172, 0);
+            text-align: center;
+            color: rgb(1, 1, 61);
+        }
+
+        label {
+            font-size: 25px;
+        }
+
+        .div1 input {
+            font-weight: bolder;
+            width: 60%;
+            height: 30px;
+            border-radius: 20px;
+            border: 2px solid rgb(224, 172, 0);
+            padding: 7px;
+        }
+
+        h3 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+       
+       #div4{
+        display: flex;
+       }
+       #div4 label{
+        margin-right: 30px;
+       }
+       #div4 input{
+       height: 20px;
+       }
+       
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 60px;
+            width: 150px;
+            background-color: rgb(224, 172, 0);
+            color: rgb(1, 1, 61);
+            border: 0.5px solid rgb(1, 1, 61);
+            border-radius: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+        ::-webkit-scrollbar {
+
+            width: 13px;
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgb(1, 1, 61);
+
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(224, 172, 0);
+            border: 0.5px solid rgb(224, 172, 0);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="div1">
+            <h1>Car Booking</h1>
+            <label for=""></label>
+            <label>Name:</label> <br> <br>
+            <input type="text" placeholder="Enter Name: " required> <br> <br>
+            <label>Email:</label> <br> <br>
+            <input type="email" placeholder="abcd@gmail.com" required> <br> <br>
+            <label>Contact No:</label> <br> <br>
+            <input type="tel" placeholder="03*********"> <br> <br>
+            <label>Address:</label> <br> <br>
+            <input type="text" placeholder="Home Address"> <br> <br>
+
+            <div id="div1">
+                <label>City:</label> <br> <br>
+                <input type="text" placeholder="Your City"> <br> <br>
+                <label>state:</label> <br> <br>
+                <input type="text" placeholder="Your State">
+            </div> <br>
+            <h3>Passengers:</h3>
+            <div id="div2" style="display: flex; justify-content: center; margin-top: 15px;">
+                <label style="margin-top: 7px;">Adult</label> <br> <br>
+                <input type="number" value="01" selected style="width: 10%;"> <br> <br>
+                <label style="margin-top: 7px;">child</label> <br> <br>
+                <input type="number" value="01" selected style="width: 10%;"> <br> <br>
+                <label style="margin-top: 7px;">Room</label> <br> <br>
+                <input type="number" value="01" selected style="width: 10%;">
+            </div> <br>
+            <h3>Time Period:</h3>
+            <div id="div3">
+                <label>From:</label>
+                <input style="width: 10%;" type="date">
+                <label>To:</label>
+                <input type="date" style="width: 10%;">
+            </div> <br> <br>
+            <h3>Which Car would you like to choose:</h3> <br> <br>
+            <div id="div4">
+                <input type="radio" name="radio_btn">
+                <label>Suzuki Alto</label>
+                <input type="radio" name="radio_btn">
+                <label>Waganor</label>
+                <input type="radio" name="radio_btn">
+                <label>Hilux</label>
+                <input type="radio" name="radio_btn">
+                <label>Corolla</label>
+                <input type="radio" name="radio_btn">
+                <label>Civic</label>
+                <input type="radio" name="radio_btn">
+                <label>Hiace</label>
+                <input type="radio" name="radio_btn">
+                <label>Mercedes</label>
+            </div>
+
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
